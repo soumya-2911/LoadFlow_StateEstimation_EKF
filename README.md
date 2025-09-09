@@ -530,35 +530,7 @@ bus1_harmonics = analyze_harmonics(waveform_data['voltage_waveforms'][0]['Bus_1'
 - **Harmonic Detection Threshold**: 1% THD minimum detectable
 - **Event Detection Latency**: < 50ms for power quality disturbances
 
-## Applications and Use Cases
 
-### Academic Research Applications
-- **Power System Stability Analysis**: Renewable energy integration studies
-- **Harmonic Propagation Modeling**: Distribution network harmonic analysis  
-- **State Estimation Algorithm Development**: Advanced filtering techniques
-- **Machine Learning Integration**: Predictive maintenance algorithms
-- **Power Electronics Impact Studies**: Grid-connected converter analysis
-
-### Industrial Applications  
-- **Manufacturing Power Quality Monitoring**: Real-time THD measurement
-- **VFD Harmonic Impact Assessment**: Motor drive system analysis
-- **Grid-Connected Renewable Systems**: Solar/wind farm power quality
-- **Data Center Power Monitoring**: Critical load harmonic analysis
-- **Steel Mill Arc Furnace Analysis**: Heavy industrial load characterization
-
-### Utility Operations
-- **Distribution System Real-Time Monitoring**: Substation power quality
-- **Capacitor Bank Switching Optimization**: Reactive power management
-- **Power Quality Compliance Verification**: IEEE 519 standard adherence
-- **Load Forecasting Integration**: Demand response programs  
-- **Fault Detection and Diagnosis**: Protective relay coordination
-
-### Research Extensions and Future Work
-- **PMU Integration**: Synchrophasor measurement incorporation
-- **Wide-Area Monitoring**: Multi-substation state estimation
-- **Cyber-Physical Security**: False data injection detection
-- **Edge Computing Implementation**: IoT-based distributed monitoring
-- **AI-Enhanced Analysis**: Deep learning for pattern recognition
 
 ## Troubleshooting and Debugging
 
@@ -633,13 +605,6 @@ source pqa_env/bin/activate  # Linux/Mac
 pip install -r requirements-dev.txt
 ```
 
-### Code Standards and Conventions
-- **PEP 8**: Python coding standards compliance
-- **Type Hints**: Use type annotations for all function parameters
-- **Docstrings**: NumPy-style documentation for all public methods
-- **Variable Naming**: Descriptive names following electrical engineering conventions
-- **Comments**: Explain mathematical derivations and power system concepts
-
 ### Testing Framework
 ```python
 # Unit tests using pytest
@@ -652,12 +617,6 @@ pytest tests/ --cov=src/ --cov-report=html
 python benchmarks/performance_test.py
 ```
 
-### Contribution Workflow
-1. **Fork Repository**: Create personal fork on GitHub
-2. **Feature Branch**: `git checkout -b feature/harmonic-analysis-enhancement`
-3. **Implementation**: Add new features with comprehensive testing
-4. **Documentation**: Update docstrings, README, and examples
-5. **Pull Request**: Submit with detailed description and test results
 
 ### Code Review Checklist
 - [ ] All tests pass with >90% code coverage
@@ -670,68 +629,24 @@ python benchmarks/performance_test.py
 ## Version History and Changelog
 
 ### Version 1.0.0 (Current)
-- Initial release with EKF-based dynamic state estimation
+- EKF-based dynamic state estimation
 - Support for IEEE 3-bus and 14-bus test systems  
 - 10+ power quality disturbance types implemented
 - Parallel processing framework for real-time analysis
 - Comprehensive visualization and harmonic analysis tools
 
-### Planned Features (Version 1.1.0)
-- [ ] Unscented Kalman Filter (UKF) implementation
-- [ ] PMU measurement integration
-- [ ] Machine learning-based disturbance classification
-- [ ] Web-based dashboard for real-time monitoring
-- [ ] Support for IEEE 39-bus and 118-bus systems
 
-### Long-term Roadmap (Version 2.0.0)
-- [ ] Distributed state estimation across multiple utilities
-- [ ] Blockchain-based secure measurement sharing
-- [ ] Quantum-resistant encryption for cyber-security
-- [ ] Edge computing deployment for IoT integration
-- [ ] Digital twin integration for predictive analytics
 
-## License and Legal Information
-
-### MIT License
-```
-MIT License
-
-Copyright (c) 2025 [Your Name/Organization]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
-### Third-Party Licenses
-- **NumPy**: BSD-3-Clause License
-- **SciPy**: BSD-3-Clause License
-- **Matplotlib**: BSD-style License
-- **Pandas**: BSD-3-Clause License
 
 ### Citation Requirements
-If you use this software in academic research, please cite:
+If you use this software, please cite:
 
 ```bibtex
 @software{power_quality_ekf_2025,
   title={Real-Time Power Quality Analysis \& Dynamic State Estimation System},
-  author={[Your Name]},
+  author={Soumya Ranjan Das},
   year={2025},
-  url={https://github.com/[username]/power-quality-analysis},
+  url={https://github.com/soumya-2911/LoadFlow_StateEstimation_EKF.git},
   version={1.0.0},
   license={MIT}
 }
@@ -740,82 +655,39 @@ If you use this software in academic research, please cite:
 ## References and Further Reading
 
 ### Primary References
-1. Bhusal, N., & Gautam, M. (2020). Power System Dynamic State Estimation Using Extended and Unscented Kalman Filters. *arXiv preprint arXiv:2012.06069*.
 
-2. IEEE Standard 519-2014. "IEEE Recommended Practice and Requirements for Harmonic Control in Electric Power Systems." Institute of Electrical and Electronics Engineers.
+1. Kundur, P. (1994). *Power System Stability and Control*. McGraw-Hill Education, New York.
 
-3. Kundur, P. (1994). *Power System Stability and Control*. McGraw-Hill Education, New York.
-
-4. Anderson, P. M., & Fouad, A. A. (2003). *Power System Control and Stability*. Second Edition, John Wiley & Sons, New Jersey.
-
-5. Tong, G., Duan, J., Qiu, J., & Ma, W. (2023). Robust forecasting-aided state estimation of power system based on extended Kalman filter with adaptive kernel risk-sensitive loss. *International Journal of Electrical Power & Energy Systems*, 146, 108055.
 
 ### Power Quality Standards
-6. IEEE Standard 1159-2019. "IEEE Recommended Practice for Monitoring Electric Power Quality." 
+2. IEEE Standard 1159-2019. "IEEE Recommended Practice for Monitoring Electric Power Quality." 
 
-7. IEC 61000-4-30:2015. "Electromagnetic compatibility (EMC) - Part 4-30: Testing and measurement techniques - Power quality measurement methods."
+3. IEC 61000-4-30:2015. "Electromagnetic compatibility (EMC) - Part 4-30: Testing and measurement techniques - Power quality measurement methods."
 
-8. IEEE Standard 1547-2018. "IEEE Standard for Interconnection and Interoperability of Distributed Energy Resources with Associated Electric Power Systems Interfaces."
+4. IEEE Standard 1547-2018. "IEEE Standard for Interconnection and Interoperability of Distributed Energy Resources with Associated Electric Power Systems Interfaces."
 
 ### State Estimation Literature  
-9. Abur, A., & Expósito, A. G. (2004). *Power System State Estimation: Theory and Implementation*. CRC Press, Florida.
+5. Khazraj, Hesam, F. Faria da Silva, and Claus Leth Bak. "A Performance Comparison Between Extended Kalman Filter and Unscented Kalman Filter in Power System Dynamic State Estimation." Proceedings of the IEEE, Department of Energy Technology, Aalborg University, 2016.
 
-10. Schweppe, F. C., & Wildes, J. (1970). Power system static-state estimation, Parts I, II, and III. *IEEE Transactions on Power Apparatus and Systems*, 89(1), 120-135.
+6. Shivakumar N. R., and Amit Jain. "A Review of Power System Dynamic State Estimation Techniques." 2008 IEEE Power System Technology and IEEE Power India Conference, IEEE, 2008.
 
-### Harmonic Analysis References
-11. Arrillaga, J., & Watson, N. R. (2003). *Power System Harmonics*. Second Edition, John Wiley & Sons, West Sussex, England.
+7. Yang, Zili, Ran Gao, and Weihua He. "A Review of The Research on Kalman Filtering in Power System Dynamic State Estimation." 2021 IEEE 4th Advanced Information Management, Communicates, Electronic and Automation Control Conference (IMCEC), IEEE, 2021.
+8. Tebianian, Hamed, and Benjamin Jeyasurya. "Dynamic State Estimation in Power Systems Using Kalman Filters." 2013 IEEE Electrical Power & Energy Conference (EPEC), IEEE, 2013
+9. Zhao, Junbo, Antonio Gómez-Expósito, Marcos Netto, Lamine Mili, Ali Abur, Vladimir Terzija, Innocent Kamwa, Bikash Pal, Abhinav Kumar Singh, Junjian Qi, Zhenyu Huang, and A. P. Sakis Meliopoulos. "Power System Dynamic State Estimation: Motivations, Definitions, Methodologies, and Future Work." IEEE Transactions on Power Systems, vol. 34, no. 4, pp. 3188–3198, July 2019.
 
-12. Dugan, R. C., McGranaghan, M. F., Santoso, S., & Beaty, H. W. (2012). *Electrical Power Systems Quality*. Third Edition, McGraw-Hill Education, New York.
-
-### Mathematical Foundations
-13. Kalman, R. E. (1960). A new approach to linear filtering and prediction problems. *Journal of Basic Engineering*, 82(1), 35-45.
-
-14. Julier, S. J., & Uhlmann, J. K. (2004). Unscented filtering and nonlinear estimation. *Proceedings of the IEEE*, 92(3), 401-422.
 
 ## Contact Information and Support
 
 ### Project Maintainer
-**Name**: [Your Name]  
-**Institution**: [Your Institution/Company]  
-**Email**: [your.email@institution.edu]  
-**LinkedIn**: [linkedin.com/in/yourprofile]  
-**ResearchGate**: [researchgate.net/profile/yourprofile]
+**Name**: Soumya Ranjan Das  
+**Institution**: Indian Institute of Technology Dhanbad 
+**Email**: 22je0971@iitism.ac.in 
+**LinkedIn**: https://www.linkedin.com/in/soumya-ranjan-das-540847250/
 
-### Technical Support
-- **GitHub Issues**: Report bugs and request features at [repository-url]/issues
-- **Discussions**: Community forum at [repository-url]/discussions  
-- **Documentation**: Comprehensive guides at [documentation-url]
-- **Video Tutorials**: YouTube channel at [youtube-channel-url]
-
-### Collaboration Opportunities
-We welcome collaboration with:
-- **Academic Institutions**: Research partnerships and student projects
-- **Industry Partners**: Real-world application development and testing
-- **Utility Companies**: Field deployment and validation studies
-- **Standards Organizations**: IEEE/IEC standard development contribution
-
-### Acknowledgments
-**Special Thanks**:
-- IEEE Power & Energy Society for standardized test system data
-- Capgemini Power Quality Division for industrial project inspiration  
-- Open-source scientific Python community for computational tools
-- Academic collaborators for theoretical foundations and validation
-
-### Professional Services
-Available for:
-- **Consulting**: Power quality analysis and system design
-- **Training**: Workshops on state estimation and power quality
-- **Custom Development**: Tailored solutions for specific applications
-- **Research Collaboration**: Joint publications and grant proposals
-
----
 
 **Document Information**:
-- **Last Updated**: December 2025  
-- **Version**: 1.0.0  
+- **Last Updated**: September 2025  
 - **Python Compatibility**: 3.7+
 - **Supported Platforms**: Windows, macOS, Linux
-- **Document Length**: 15,000+ words
-- **Maintenance**: Actively maintained with quarterly updates
 
 **Keywords**: Extended Kalman Filter, Power Quality Analysis, Dynamic State Estimation, Harmonic Analysis, VFD Harmonics, Capacitor Switching, Real-time Monitoring, IEEE 519-2014, Power System Simulation, Python Implementation
