@@ -679,9 +679,9 @@ If you use this software, please cite:
 ## Contact Information and Support
 
 ### Project Maintainer
-**Name**: Soumya Ranjan Das  
-**Institution**: Indian Institute of Technology Dhanbad 
-**Email**: 22je0971@iitism.ac.in 
+**Name**: Soumya Ranjan Das \
+**Institution**: Indian Institute of Technology Dhanbad \
+**Email**: 22je0971@iitism.ac.in \
 **LinkedIn**: https://www.linkedin.com/in/soumya-ranjan-das-540847250/
 
 
